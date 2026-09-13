@@ -15,9 +15,7 @@ def main():
         user_input = input()
         if user_input == 'exit':
             break
-
         messages.append({"role": "user", "content": user_input})
-
         response = client.messages.create(
             model=MODEL,
             max_tokens=16000,
